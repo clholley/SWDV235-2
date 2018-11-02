@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+	<!-- Cindy Holley, 4/16/2018 -->
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Cycle Out Cancer Contact Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script src="_js/jquery.min.js"></script>
+	<script src="_js/jquery-ui.min.js"></script>	
+	<link href="_js/jquery-ui.min.css" rel="stylesheet">
+	
+	<script src="js/validation_contact.js"></script>
+		
+	<link rel="stylesheet" href="css/cyclestyles.css">	
+</head>
+
+<body>
+	<div class="container">
+
+		<!-- top section -->
+		<div class="jumbotron">
+		
+			<div class="header" id="top">
+				<img src="images/cycleparade.jpg" alt="Cycle Riders" width="527" height="312">
+				
+				<h1>Cycle Out Cancer</h1>      
+				<h2>We Ride So Others May Live</h2> 
+			</div> <!-- end class header -->
+			
+			<div class="nav">
+			  <ul>
+				<li><a href="index.html" class="btn btn-block" role="button">Home</a></li>
+				
+				<li><a href="cycleevents.html" class="btn btn-block" role="button">Events</a></li>
+				
+				<li><a href="cyclefaq.html" class="btn btn-block" role="button">Cancer FAQs</a></li>
+				
+				<li><a href="cyclegames.html" class="btn btn-block" role="button">Games</a></li>	
+
+				<li><a href="cyclecontact.html" class="btn btn-block active" role="button">Contact Us</a></li>
+			  </ul>	
+			</div> <!-- end class nav -->				
+		</div> <!--end jumbotron-->
+		
+		<!-- main section -->
+		<div class="well">
+			<h2>Contact us</h2>
+			<div>
+				<form id="contactus" action="mailto:cindyholley@mycwi.cc?subject=CycleOutCancerContactMail" method="get">
+					<div> <!-- first name -->
+						<label for="firstName" class="label">First Name: </label>
+						<input name="firstName" type="text" class="required" id="firstName">
+						<span>*</span>
+					</div>
+					
+					<div> <!-- last name -->
+						<label for="lastName" class="label">Last Name: </label>
+						<input name="lastName" type="text" class="required" id="lastName">
+						<span>*</span>
+					</div>
+				
+					<div> <!-- email address -->
+						<label for="email" class="label">E-mail Address: </label>
+						<input name="email" type="text" id="email">
+						<span>*</span>
+					</div>
+
+					<div> <!-- address -->
+						<label for="address" class="label">Address: </label>
+						<input name="address" type="text" id="address" size="36">
+						<span>*</span>
+					</div>
+					
+					<div> <!-- city -->
+						<label for="city" class="label">City: </label>
+						<input name="city" type="text" id="city" size="36">
+						<span>*</span>
+					</div>
+					
+					<div> <!-- state -->
+						<label for="state" class="label">State/Province: </label>
+						<input name="state" type="text" id="state" size="36">
+						<span>*</span>
+					</div>
+					
+					<div> <!-- zip -->
+						<label for="zip" class="label">Postal Code: </label>
+						<input name="zip" type="text" id="zip" size="36">
+						<span>*</span>
+					</div>  
+									
+					<div> <!-- comments -->
+						<label for="comments" class="label">Comments: </label>
+						<textarea name="comments" cols="37" rows="5" id="comments"></textarea>
+					</div>
+				
+					<div> <!-- submit button -->
+						<input type="button" id="contact_us" value="Submit" class="btn" onclick="return tyAlert();">
+					</div>
+				</form>
+			</div> <!-- end contact us -->
+		</div> <!-- end well -->
+		
+		<!-- footer section -->
+		<div class="footer">						
+			<div class="copyright">
+				<!-- old link:  <p>© 2018 Cycle Out Cancer <a href="#"><span class="glyphicon glyphicon-envelope"></span></a></p> -->
+				
+				<p>© 2018 Cycle Out Cancer <a href="cyclecontact.html"><span class="glyphicon glyphicon-envelope"></span></a></p>
+			</div> <!-- end copyright -->
+			
+			<!-- button to go to top of header-->
+			<div class="topbutton" >
+				<a href="#top" class="btn btn-xs">Top of Page</a> 			
+			</div> <!-- end class topbutton -->
+			
+			<!--<div class="signup">
+				<form action="mailto:cycleoutcancer@cycleoutcancer.com" method="POST">
+					<label for="exampleEmailInput">Sign up for our newsletter   </label>
+					<input type="email" placeholder="test@mailbox.com" id="exampleEmailInput" >
+					<input type="submit" class="btn btn-default btn-xs" value="Submit">	
+				</form>	
+			</div>  -->	
+			
+		</div> <!-- end class footer -->
+	</div> <!-- end container -->   
+</body>
+</html>

@@ -1,0 +1,358 @@
+/* CSS for Cycle Out Cancer, Cindy Holley, 4/16/2018 */ 
+
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.2;
+}
+ol { 
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} 
+/*********************** end reset browser styles *******************************/
+/********************************************************************************/
+
+/* Styles to create a responsive web design */
+
+.desktop {
+	display: none;
+}
+ 
+.container {
+	background: linear-gradient(to bottom, #e68a00,#ffcc80); 
+	width: 100%;
+}
+
+/* Styles for Jumbotron with header and nav */
+.jumbotron {
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+	margin: 0;
+	padding: 10px;
+}
+.header img {
+	max-width: 100%;
+	height: auto;
+	border: solid #cc7a00;
+	border-radius: .5em;
+	border-style: ridge
+}
+.header {
+	text-align: center;
+}
+.header h1 {
+	font-size: 3.5em;
+	font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+.header h2 {
+	color: #663d00;
+	font-size: 1.5em;
+	font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* General styles for Bootstrap buttons */
+.btn {
+	background-color: white;
+	border: solid #cc7a00;
+	border-radius: .5em;
+	color: #663d00;
+	font-size: 1em;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;	
+}
+
+/* Styles for nav section */
+.nav ul {
+	margin-top: 20px;
+	padding-left: 0;
+}
+.nav li {
+	list-style-type: none;
+	text-decoration: none;
+	padding-left: 0;
+}
+.nav .btn {	
+	background-color: white;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+.nav a:hover {
+	background-color: #cc7a00;
+	color: white;	
+}
+.nav .active {
+	background-color: #cc7a00;
+	color: white;	
+}
+
+/* Styles for main section and well */
+.well {
+	background-color: #ffebcc;
+	margin: 10px;
+	overflow: hidden;
+}
+.well h1 {
+	font-size: 1.5em;
+	font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+	color: rgb(249,107,24);
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+.well h2 {
+	font-size: 1.5em;
+	font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+	color: rgb(249,107,24);
+	border-top: 2px dotted rgb(141,165,22);
+	border-bottom: 2px dotted rgb(141,165,22);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 15px 0 5px 0;
+	overflow: hidden;
+}
+.well p{
+	margin: .5em;
+}
+.well .btn {
+	font-size: 1em;
+}
+.boldtext, dt {
+	font-weight: bold;	
+}
+
+/* Styles for footer section */
+.copyright {
+	margin: 10px;
+	padding-left: 10px;
+}
+.glyphicon {
+	color: black;
+}
+.topbutton {
+	float: right;
+	margin: 10px 0;
+}
+.topbutton a:hover {
+	background-color: #cc7a00;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;	
+}
+
+/* Page-Specific Styles */
+
+/* Styles for the Event page fishing trip */
+
+.image_list h1 {
+    color: blue;
+    margin: 0;
+    padding: 0 0 1em 0;
+    text-align: center;
+}
+.slide_show h3 {
+	font-size: 140%;
+	margin-top: .5em;
+    text-align: center;
+}
+.slide_show p {
+    margin: 0;
+    padding: .5em;
+    text-align: center;	
+}
+.slide_show ul {
+    display: none;
+	text-decoration: none;
+}
+
+/* Styles for newsletter sign-up */
+#email_form label {
+	color: #cc7a00;
+	display: block; 
+	font-weight: bold;	
+	padding-right: 7px;	
+	text-align: left;
+	width: 100em;
+}
+span {
+	color: red;
+}
+
+/* Styles for the contact page form */ 
+#contactus label {
+	color: #cc7a00;
+	display: block; 
+	margin-bottom: 1em; 
+	padding: 7px 7px 0 0;
+	font-weight: bold;
+	text-align: left;
+	width: 175px;
+}
+
+#signup label.error {
+	font-size: 0.8em;
+	color: #F00;
+	font-weight: bold;
+	display: block;
+	margin-left: 215px;
+}
+#signup input.error, #signup select.error  {
+  background: #FFA9B8;
+  border: 1px solid red;
+}
+
+/* Style for Games page sections */
+.calculator {
+	border: solid #cc7a00;
+	border-radius: .5em;
+	color: #cc7a00;
+	padding: .5em; 
+}
+
+/*Styles for Trash It! on Useful Tools page */
+#photos {
+  float: right;
+}
+/*
+#trashcan {
+  float: left;
+  display: block;
+  opacity: .6;
+}
+#trashcan.highlight {
+  opacity: 1;
+} */
+
+
+/***********************************************************************************/
+/********************* Media query for tablet layout *******************************/
+
+@media only screen and (min-width: 768px) {
+
+	/* Style specifies to display the desktop class */ 
+	.desktop {
+		display: inline; 
+	}
+	.container .jumbotron {
+		padding: 10px;
+	}
+	
+	/* Styles for nav section */
+	.nav li {
+		display: inline;  
+		float: left; 
+		margin: 1px 2px;  
+		width: 20%; 	 
+	}
+	.nav ul {
+		padding: 10px 0;		
+	}
+	
+	/* Styles for figure and images */
+	figure {
+		display: inline-block;
+		float: right;
+		border: 1px solid #ffcc80;
+		margin-left: 2%;
+	}
+	figcaption {
+		position: relative;
+		top: 15%;
+		bottom: 15%;
+		text-align: center;
+	}
+	.floatleft {
+		float: left;
+		margin-right: 5px;
+		padding: 5px;
+	}
+	.floatright {
+		float: right;
+		margin-left: 5px;
+		padding: 5px;
+	}
+
+	/* Styles for the contact page form */ 
+	#contactus label {
+		color: #cc7a00;
+		display: block;
+		clear: left;
+		float: left;
+		width: 175px;
+		text-align: right;
+		padding: 7px 15px 0 0;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	input {
+		margin-bottom: .5em; 
+	}
+}
+
+
+	
+/***********************************************************************************/
+/********************* Media query for desktop layout *******************************/
+
+@media only screen and (min-width: 970px) {
+	
+	/* Styles for nav section */
+	.nav li {
+		display: inline;  
+		float: left; 
+		margin: 1px 2px;  
+		width: 18%; 	 
+	}
+	
+	/* Styles for the contact page form */ 
+	#email_form label {
+		color: #cc7a00;
+		display: block;
+		clear: left;
+		float: left;
+		width: 200px;
+		text-align: right;
+		font-weight: bold;
+	}
+	input {
+		margin-bottom: .5em; 
+	}
+	
+	/* Styles for the contact page form */ 
+	#contactus label {
+		color: #cc7a00;
+		display: block;
+		clear: left;
+		float: left;
+		width: 175px;
+		text-align: right;
+		padding: 7px 7px 0 0;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	input {
+		margin-bottom: .5em; 
+	}
+}

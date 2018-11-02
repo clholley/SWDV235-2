@@ -1,0 +1,141 @@
+﻿<!--
+    Date        Programmer      Description
+    4/16/2018   Cindy Holley    Create original website
+    11/1/2018   Cindy Holley    Create cyclecontact.aspx page and connect to CycleOut database
+    11/2/2018   Cindy Holley    Update navigation links, create contact thank you page
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cycle Out Cancer Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/email_list.js"></script>
+
+    <link rel="stylesheet" href="css/cyclestyles.css">
+
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- top section -->
+        <div class="jumbotron">
+
+            <div class="header" id="top">
+                <img src="images/cycleparade.jpg" alt="Cycle Riders">
+
+                <h1>Cycle Out Cancer</h1>
+                <h2>We Ride So Others May Live</h2>
+            </div> <!-- end class header -->
+
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html" class="btn btn-block active" role="button">Home</a></li>
+
+                    <li><a href="cycleevents.html" class="btn btn-block" role="button">Events</a></li>
+
+                    <li><a href="cyclefaq.html" class="btn btn-block" role="button">Cancer FAQs</a></li>
+
+                    <li><a href="cyclegames.html" class="btn btn-block" role="button">Games</a></li>
+
+                    <li><a href="cyclecontact.aspx" class="btn btn-block" role="button">Contact Us</a></li>
+                </ul>
+            </div> <!-- end class nav -->
+        </div> <!--end jumbotron-->
+        <!-- main section -->
+        <div class="well">
+
+            <h1>Welcome to Cycle Out Cancer!</h1>
+
+            <p>Cycle Out Cancer is a volunteer organization that promotes cancer awareness. It is one of the largest all-volunteer motorcycle clubs in the Midwest. Anyone who is a motorcycle enthusiast is welcome to join.</p>
+
+            <div class="date">
+                <h2>Today is a new day. Make it your best day.</h2>
+                <script src="js/date_ap.js"></script>
+            </div> <!--end class date-->
+
+            <div>
+                <!-- Murach, page 132 -->
+                <h2>Please join our email list to receive our newsletter</h2>
+                <form id="email_form" name="email_form" action="mailto:cindyholley@mycwi.cc?subject=JoinOurList" method="get">
+                    <label for="email_address1">Email Address:</label>
+                    <input type="text" id="email_address1" name="email_address1">
+                    <span>*</span><br>
+
+                    <label for="email_address2">Re-enter Email Address:</label>
+                    <input type="text" id="email_address2" name="email_address2">
+                    <span>*</span><br>
+
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name">
+                    <span>*</span><br>
+
+                    <label>&nbsp;</label>
+                    <input type="button" id="join_list" value="Join Our List" class="btn" onclick="return tyAlert();">
+
+                </form>
+            </div>
+
+            <div>
+                <h2>About Us</h2>
+
+                <div class="desktop">
+                    <img class="floatright" src="images/cyclehigh5.jpg" alt="Cycle Riders" width="448" height="299">
+                </div>
+
+                <p>Cycle Out Cancer was founded by a group of three motorcycle enthusiasts from Kansas City who each found their lives interrupted by something else they unfortunately shared in common: cancer. Each made a vow to the other to fight their different forms of cancer to the best of their ability and some day, "ride again."</p>
+
+                <p>After three years and countless medical procedures, their dream came true in May of 2000 when the threesome made their way from Kansas City to Branson, Missouri.  At every stop in the short journey the three friends shared their amazing stories of how they fought their cancers.  Over time, more and more people have joined their rides. Now, Cycle Out Cancer is one of the largest all-volunteer motorcycle clubs in the midwest.</p>
+
+                <p>Anyone who is a motorcycle enthusiast is welcome to join. Many say that the best part of the ride are the inspiring stories shared by the members at the finish line.</p>
+                <br>
+            </div>
+
+            <div>
+                <h2>Blood and Organ Donation</h2>
+
+                <p>For information on donating blood </p>
+
+                <a href="http://www.redcrossblood.org/donating-blood" target="_blank" class="btn btn-default" role="button">American Red Cross</a>
+
+                <p>For information on donating organs </p>
+
+                <a href="http://www.webmd.com/a-to-z-guides/organ-donation-facts" target="_blank" class="btn btn-default" role="button">WebMD</a>
+            </div>
+        </div> <!--end well-->
+        <!--footer section-->
+        <div class="footer">
+
+            <div class="copyright">
+                <p>© 2018 Cycle Out Cancer <a href="cyclecontact.aspx"><span class="glyphicon glyphicon-envelope"></span></a></p>
+            </div> <!--end copyright-->
+            
+            <div class="topbutton"><!-- button to go to top of header-->
+                <a href="#top" class="btn btn-xs">Top of Page</a>
+            </div> <!-- end class topbutton -->
+
+        </div> <!--end class footer-->
+    </div><!--close the container-->
+</body>
+</html>
+
